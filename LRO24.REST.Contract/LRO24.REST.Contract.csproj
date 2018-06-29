@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E72BD453-EE82-4AC3-A19A-3D1B0B050E15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LRO24.REST.Contract</RootNamespace>
+    <AssemblyName>LRO24.REST.Contract</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auftrag.cs" />
+    <Compile Include="Auftragsdaten.cs" />
+    <Compile Include="Auftragsposition.cs" />
+    <Compile Include="Auth.cs" />
+    <Compile Include="GetTourenRequest.cs" />
+    <Compile Include="GetTourenResult.cs" />
+    <Compile Include="Laderaum.cs" />
+    <Compile Include="LadestellenReihenfolge.cs" />
+    <Compile Include="LoginRequest.cs" />
+    <Compile Include="LoginResult.cs" />
+    <Compile Include="Mandant.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageDataType.cs" />
+    <Compile Include="MessageStatus.cs" />
+    <Compile Include="MessageType.cs" />
+    <Compile Include="OrderDirection.cs" />
+    <Compile Include="Packstueck.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickcheckLademeter.cs" />
+    <Compile Include="QuickcheckTourRequest.cs" />
+    <Compile Include="QuickcheckTourResult.cs" />
+    <Compile Include="RestError.cs" />
+    <Compile Include="SaveResult.cs" />
+    <Compile Include="Tour.cs" />
+    <Compile Include="Tourstatus.cs" />
+    <Compile Include="UploadAuftragRequest.cs" />
+    <Compile Include="UploadAuftragResult.cs" />
+    <Compile Include="UploadTourRequest.cs" />
+    <Compile Include="UploadTourResult.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

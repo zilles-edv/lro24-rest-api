@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRO24.REST.Contract", "LRO24.REST.Contract\LRO24.REST.Contract.csproj", "{808623BB-CB50-4C41-81AC-3FEC353DD772}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{808623BB-CB50-4C41-81AC-3FEC353DD772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808623BB-CB50-4C41-81AC-3FEC353DD772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808623BB-CB50-4C41-81AC-3FEC353DD772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808623BB-CB50-4C41-81AC-3FEC353DD772}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAF12F1C-7313-43B8-B712-CBE2EF0D57C6}
+	EndGlobalSection
+EndGlobal
