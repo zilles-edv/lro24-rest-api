@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>LRO24.REST.Contract</id>
+    <version>0.0.0.0</version>
+    <authors>Jonas Zilles: EDV-Dienstleistungen</authors>
+    <owners>Jonas Zilles: EDV-Dienstleistungen</owners>
+    <description>LRO24 REST Contract</description>
+    <dependencies>
+      <dependency id="Rehm.Core.Contracts" version="$DependencyVersion$" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\**\Rehm.Core.Common.dll" target="lib\net46\" />
+  </files>
+</package>

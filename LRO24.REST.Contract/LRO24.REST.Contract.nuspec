@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>LRO24.REST.Contract</id>
+    <version>0.0.0.0</version>
+    <authors>Jonas Zilles: EDV-Dienstleistungen</authors>
+    <owners>Jonas Zilles: EDV-Dienstleistungen</owners>
+	<title>LRO24 REST Contract</title>
+    <description>Official contract for LRO24 REST API</description>
+	<projectUrl>https://github.com/zilles-edv/lro24-rest-api</projectUrl>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\**\LRO24.REST.Contract.dll" target="lib\net46\" />
+  </files>
+</package>

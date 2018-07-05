@@ -22,5 +22,9 @@ namespace LRO24.REST.Contract {
         public bool? nichtBelastbar { get; set; }
         public int? anzahlStapelbar { get; set; }
         public bool? stirnwand { get; set; }
+        public string versandstelle { get; set; }
+        public string routeText { get; set; }
+        public bool? umschlagpunkt { get; set; }
+        public string externeVersandtexte { get; set; }
     }
 }

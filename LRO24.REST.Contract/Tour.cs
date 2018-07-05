@@ -25,6 +25,7 @@ namespace LRO24.REST.Contract {
         public int anzahlStops { get; set; }
         public int anzahlLieferungen { get; set; }
         public int anzahlPackstuecke { get; set; }
+        public string benutzer { get; set; }
 
         public List<Packstueck> packstuecke { get; set; } = new List<Packstueck>();
 
