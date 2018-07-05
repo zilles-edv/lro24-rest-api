@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>LRO24.REST.Client</id>
+    <version>0.0.0.0</version>
+    <authors>Jonas Zilles: EDV-Dienstleistungen</authors>
+    <owners>Jonas Zilles: EDV-Dienstleistungen</owners>
+	<title>LRO24 REST Client</title>
+    <description>Official client for LRO24 REST API</description>
+	<projectUrl>https://github.com/zilles-edv/lro24-rest-api</projectUrl>
+    <dependencies>
+      <dependency id="LRO24.REST.Contract" version="$DependencyVersion$" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\**\LRO24.REST.Client.dll" target="lib\net46\" />
+  </files>
+</package>

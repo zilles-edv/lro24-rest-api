@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using LRO24.REST.Client.Helper;
+using LRO24.REST.Contract;
+using Newtonsoft.Json;
 
 namespace LRO24.REST.Client {
     public class LRO24Client {
