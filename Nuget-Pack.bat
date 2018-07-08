@@ -9,7 +9,7 @@ rem %WORKSPACE%
 SET WORKSPACE=.
 
 rem 1.2.3.4
-SET PROG_VERSION=1.8.3.0
+SET PROG_VERSION=1.8.4.0
 
 rmdir out /s /q
 mkdir out
