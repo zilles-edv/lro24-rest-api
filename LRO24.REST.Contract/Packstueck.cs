@@ -2,6 +2,7 @@
 
 namespace LRO24.REST.Contract {
     public class Packstueck {
+        public string schluessel { get; set; }
         public string nummer { get; set; }
         public string typ { get; set; }
         public string auftragsnummer { get; set; }
