@@ -45,5 +45,11 @@ namespace LRO24.REST.Contract {
         /// Benutzername
         /// </summary>
         public string username { get; set; }
+
+        public MessageMetadata metadata { get; set; }
+
+        public Message() {
+            metadata = new MessageMetadata();
+        }
     }
 }

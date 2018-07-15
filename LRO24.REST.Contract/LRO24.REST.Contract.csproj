@@ -54,6 +54,7 @@
     <Compile Include="Mandant.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="MessageDataType.cs" />
+    <Compile Include="MessageMetadata.cs" />
     <Compile Include="MessageStatus.cs" />
     <Compile Include="MessageType.cs" />
     <Compile Include="OrderDirection.cs" />
