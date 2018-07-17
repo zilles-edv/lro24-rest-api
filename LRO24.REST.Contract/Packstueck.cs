@@ -27,5 +27,13 @@ namespace LRO24.REST.Contract {
         public string routeText { get; set; }
         public bool? umschlagpunkt { get; set; }
         public string externeVersandtexte { get; set; }
+        public int? laderaumNummer { get; set; }
+        public int? posL { get; set; }
+        public int? posB { get; set; }
+        public int? posH { get; set; }
+        public int? sizeL { get; set; }
+        public int? sizeB { get; set; }
+        public int? sizeH { get; set; }
+        public int? rotation { get; set; }
     }
 }
