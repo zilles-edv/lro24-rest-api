@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LRO24.REST.Contract {
-    public enum MessageType {
+﻿namespace LRO24.REST.Contract
+{
+    public enum MessageType
+    {
         Unknown = 0,
         TourInBearbeitung = 1,
         LadeplanPdf = 2,

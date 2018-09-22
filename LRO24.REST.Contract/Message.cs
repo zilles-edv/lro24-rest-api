@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace LRO24.REST.Contract
+{
+    public class Message
+    {
 
-namespace LRO24.REST.Contract {
-    public class Message {
+        public Message()
+        {
+            metadata = new MessageMetadata();
+        }
+
         public string id { get; set; }
 
         public string date { get; set; }
@@ -47,9 +49,5 @@ namespace LRO24.REST.Contract {
         public string username { get; set; }
 
         public MessageMetadata metadata { get; set; }
-
-        public Message() {
-            metadata = new MessageMetadata();
-        }
     }
 }

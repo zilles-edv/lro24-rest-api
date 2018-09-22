@@ -1,6 +1,6 @@
 ﻿namespace LRO24.REST.Contract
 {
-    public class QuickcheckTourResult : SaveResult
+    public class ReadyviewTourResult : SaveResult
     {
         public string url { get; set; }
 

@@ -1,5 +1,7 @@
-﻿namespace LRO24.REST.Contract {
-    public class GetTourenRequest {
+﻿namespace LRO24.REST.Contract
+{
+    public class GetTourenRequest
+    {
         /// <summary>
         /// Maximale Anzahl an Einträgen (max. 100)
         /// </summary>

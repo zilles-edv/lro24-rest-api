@@ -1,3 +1,5 @@
-﻿namespace LRO24.REST.Contract {
-    public class UploadAuftragResult : SaveResult { }
+﻿namespace LRO24.REST.Contract
+{
+    public class UploadAuftragResult : SaveResult
+    { }
 }

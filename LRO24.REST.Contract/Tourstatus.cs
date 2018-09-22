@@ -1,5 +1,7 @@
-﻿namespace LRO24.REST.Contract {
-    public enum TourStatus {
+﻿namespace LRO24.REST.Contract
+{
+    public enum TourStatus
+    {
         Deaktiviert = 0,
         Initial = 10,
         ZurueckAnDisposition = 15,
