@@ -11,7 +11,6 @@ namespace LRO24.REST.Client
 {
     public class LRO24Client
     {
-
         public LRO24Client()
         { }
 
@@ -84,13 +83,24 @@ namespace LRO24.REST.Client
         }
 
         /// <summary>
-        /// Einen fertigen Plan dynamisch anzeigen
+        /// Einen fertigen Plan dynamisch anzeigen, analog zu <see cref="QuickcheckTour"/>
         /// </summary>
         public ReadyviewTourResult ReadyViewTour(ReadyviewTourRequest request)
         {
             string url = URL.NormalizeUrl() + "/server/api/REST/v1/tour/readyview";
 
             return Post<ReadyviewTourResult>(url, request);
+        }
+
+        /// <summary>
+        /// Eine per <see cref="UploadTour"/> an LRO24 übertragene Tour zurückholen. Funktioniert nur, solange die Tour noch nicht
+        /// in Bearbeitung ist.
+        /// </summary>
+        public ZurueckAnDispoResult ZurueckAnDispo(ZurueckAnDispoResult request)
+        {
+            string url = URL.NormalizeUrl() + "/server/api/REST/v1/tour/zurueckandispo";
+
+            return Post<ZurueckAnDispoResult>(url, request);
         }
 
         /// <summary>
