@@ -36,6 +36,12 @@ namespace LRO24.REST.Client
         /// </summary>
         public string Mandant { get; set; }
 
+        public LoginResult Login(LoginRequest loginRequest)
+        {
+            string url = URL.NormalizeUrl() + "/server/api/REST/v1/benutzer/login";
+            return Post<LoginResult>(url, loginRequest);
+        }
+
         /// <summary>
         /// Lädt eine Liste mit Touren. Es werden nur "Header"-Daten ausgegeben.
         /// </summary>
@@ -96,11 +102,17 @@ namespace LRO24.REST.Client
         /// Eine per <see cref="UploadTour"/> an LRO24 übertragene Tour zurückholen. Funktioniert nur, solange die Tour noch nicht
         /// in Bearbeitung ist.
         /// </summary>
-        public ZurueckAnDispoResult ZurueckAnDispo(ZurueckAnDispoResult request)
+        public ZurueckAnDispoResult ZurueckAnDispo(ZurueckAnDispoRequest request)
         {
             string url = URL.NormalizeUrl() + "/server/api/REST/v1/tour/zurueckandispo";
 
             return Post<ZurueckAnDispoResult>(url, request);
+        }
+
+        public bool DeleteTour(string identifier)
+        {
+            string url = URL.NormalizeUrl() + "/server/api/REST/v1/tour/" + identifier;
+            return Delete<bool>(url);
         }
 
         /// <summary>
@@ -210,6 +222,16 @@ namespace LRO24.REST.Client
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
+            request.Headers.Add("x-auth-token", AuthToken);
+            request.Headers.Add("x-mandant", Mandant);
+
+            return ReadJsonResponse<T>(request);
+        }
+
+        private T Delete<T>(string url)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "DELETE";
             request.Headers.Add("x-auth-token", AuthToken);
             request.Headers.Add("x-mandant", Mandant);
 
