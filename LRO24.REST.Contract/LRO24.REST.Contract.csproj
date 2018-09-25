@@ -73,6 +73,7 @@
     <Compile Include="UploadAuftragResult.cs" />
     <Compile Include="UploadTourRequest.cs" />
     <Compile Include="UploadTourResult.cs" />
+    <Compile Include="ZurueckAnDispoRequest.cs" />
     <Compile Include="ZurueckAnDispoResult.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
