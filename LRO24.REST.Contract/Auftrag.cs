@@ -6,9 +6,17 @@ namespace LRO24.REST.Contract
     {
         public string nummer { get; set; }
 
+        public string auftragsnummer { get; set; }
+
         public string kundenname { get; set; }
 
+        public string kundennummer { get; set; }
+
+        public string adresse { get; set; }
+
         public string verladedatum { get; set; }
+
+        public string text { get; set; }
 
         public int status { get; set; }
 
