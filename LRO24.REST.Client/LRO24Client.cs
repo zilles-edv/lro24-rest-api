@@ -1,11 +1,11 @@
-﻿using System;
+﻿using LRO24.REST.Client.Helper;
+using LRO24.REST.Contract;
+using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using LRO24.REST.Client.Helper;
-using LRO24.REST.Contract;
-using Newtonsoft.Json;
 
 namespace LRO24.REST.Client
 {
@@ -75,6 +75,16 @@ namespace LRO24.REST.Client
             string url = URL.NormalizeUrl() + "/server/api/REST/v1/tour";
 
             return Post<UploadTourResult>(url, uploadTourRequest);
+        }
+
+        /// <summary>
+        /// Überträgt einen Auftrag (Lieferung) an LRO24.
+        /// </summary>
+        public UploadAuftragResult UploadAufrag(UploadAuftragRequest uploadAuftragRequest)
+        {
+            string url = URL.NormalizeUrl() + "/server/api/REST/v1/auftrag";
+
+            return Post<UploadAuftragResult>(url, uploadAuftragRequest);
         }
 
         /// <summary>
