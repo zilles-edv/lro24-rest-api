@@ -10,6 +10,6 @@
 	<projectUrl>https://github.com/zilles-edv/lro24-rest-api</projectUrl>
   </metadata>
   <files>
-    <file src=".\bin\Release\**\LRO24.REST.Contract.dll" target="lib\net40" />
+    <file src=".\bin\Debug\**\LRO24.REST.Contract.dll" target="lib\net40" />
   </files>
 </package>
