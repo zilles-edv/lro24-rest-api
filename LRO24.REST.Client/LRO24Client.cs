@@ -22,7 +22,7 @@ namespace LRO24.REST.Client
         }
 
         /// <summary>
-        /// URL zum LRO (z.B. https://www.lro24.de (PROD) order https://beta.laderaumplaner.de (Beta))
+        /// URL zum LRO (z.B. https://www.lro24.de (PROD) oder https://beta.laderaumplaner.de (Beta))
         /// </summary>
         public string URL { get; set; }
 
