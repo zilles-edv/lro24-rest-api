@@ -47,6 +47,7 @@
     <Compile Include="Auth.cs" />
     <Compile Include="GetTourenRequest.cs" />
     <Compile Include="GetTourenResult.cs" />
+    <Compile Include="Sicherungstexteintrag.cs" />
     <Compile Include="Laderaum.cs" />
     <Compile Include="LadestellenReihenfolge.cs" />
     <Compile Include="LoginRequest.cs" />

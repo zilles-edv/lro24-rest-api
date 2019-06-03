@@ -1,4 +1,6 @@
-﻿namespace LRO24.REST.Contract
+﻿using System.Collections.Generic;
+
+namespace LRO24.REST.Contract
 {
     public class Laderaum
     {
@@ -23,5 +25,13 @@
         public int? innenbreite { get; set; }
 
         public int? innenhoehe { get; set; }
+
+        public int? anzahlDielen { get; set; }
+
+        public int? anzahlTrennwaende { get; set; }
+
+        public int? anzahlSpanngurte { get; set; }
+
+        public List<Sicherungstexteintrag> sicherungstexte { get; set; } = new List<Sicherungstexteintrag>();
     }
 }
